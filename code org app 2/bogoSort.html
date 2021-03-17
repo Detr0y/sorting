@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Bogo sort</title>
+
+  <script src="script.js"></script>
+
+</head>
+
+
+<body style="background-image: url('bgBogo.png')">
+
+  <nav>
+    <div>
+      <ul id="ribbon">
+        <a class="menu" style="color: #FFFFFF" href="code.html"><li class="bar">Home</li></a>
+        <a class="menu" style="color: #FFFFFF" href="numSorter.html"> <li class="bar">Bubble sort</li></a>
+        <a class="menu" style="color: #FFFFFF" href="bogoSort.html"><li class="bar">Bogo sort</li></a>
+        <a class="menu" style="color: #FFFFFF" href="filter.html"><li class="bar">Filter</li></a>
+        <li class="bar" onclick="getArray()">New array?</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <p class="numVis lightText">This is a program for various sorting algorithms</p>
+  </div>
+
+  <button onclick="bogoSort()">Run the sort</button>
+
+  <div>
+    <span id="bogoNum" class="lightText"><strong>Sorted array: </strong></span>
+    <br>
+    <span id="trialNumBog" class="lightText">Number of trials: </span>
+  </div>
+
+  <div>
+    <h4 class="lightText">This is the bogo sort</h4>
+    <p class="lightText">It works by randomizing everything in the array until a correct sequence is obtained. The bogosort is generally the slowest of all
+      sorting types, but on occasion, can be the fastest. The larger the array input into the algorithm is, the more time it will take to complete. </p>
+    <video height="360" width="640" controls>
+      <source src="Bogo Sort.mp4" type="video/mp4" title="video of bogo sort">
+    </video>
+  </div>
+
+</body>
+</html
